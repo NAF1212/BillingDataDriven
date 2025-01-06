@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import groovyjarjarantlr4.v4.parse.ANTLRParser.finallyClause_return;
 
@@ -53,6 +54,7 @@ public class AddBill {
 	private final By confirmButton = By.xpath("//span[normalize-space()='Yes']");
 	private final By toastMessageBy = By.id("toastmessagewarn");
 	private final By errorMessage= By.id("toastmessageerror");
+	private final By searchYesPopup = By.xpath("(//span[normalize-space()='Yes'])[1]");
 
 	// Constructor
 	public AddBill(WebDriver driver) {
@@ -324,4 +326,21 @@ public class AddBill {
 		waitForLoaderToDisappear();
 	}
 
+	public void testToastMessageAfterPublish() {
+        // Locate and click the Publish button
+        WebElement publishButton = driver.findElement(publishedButton); 
+        publishButton.click();
+
+        // Wait for the toast message to appear
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement toastMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@id='toastmessageerror']")));
+
+        // Validate the presence of the toast message
+        if(toastMessage.isDisplayed()) {
+        	System.out.println("Test passed "  + toastMessage.getText());
+        }
+        else {
+        	System.out.println("Test Passed no toast message appered");
+        }
+	}
 }

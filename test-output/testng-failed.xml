@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pages.TermChangePopUp">
+      <class name="testCases.FastFrateTest">
         <methods>
-          <include name="setupExtentReports"/>
           <include name="tearDownExtentReports"/>
           <include name="executeBillingTests"/>
+          <include name="setupExtentReports"/>
         </methods>
-      </class> <!-- pages.TermChangePopUp -->
+      </class> <!-- testCases.FastFrateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

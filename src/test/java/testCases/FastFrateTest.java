@@ -35,8 +35,8 @@ public class FastFrateTest {
     //private static final String PASSWORD = "Abc8094@";
     private static final String USERNAME = "Jitendra.kumar@atomicnorth.com";
     private static final String PASSWORD = "Jeetay@123";
-    private static final String SCREENSHOT_PATH = "C:\\Users\\MdNafisAhmad\\git\\data\\DataDrivenFramework\\target\\1";
-    private static final String EXCEL_PATH = "C:\\Users\\MdNafisAhmad\\git\\data\\DataDrivenFramework\\src\\test\\java\\utils\\AutomationTest.xlsx";
+    private static final String SCREENSHOT_PATH = "C:\\Users\\MdNafisAhmad\\git\\repository8\\DataDrivenFramework\\target.Screenshot";
+    private static final String EXCEL_PATH = "C:\\Users\\MdNafisAhmad\\git\\repository8\\DataDrivenFramework\\src\\test\\java\\utils\\AutomationTest2.xlsx";
     private static final String SHEET_NAME = "Sheet1"; // Update to your actual sheet name
 
     private ExtentReports extent;
@@ -108,7 +108,9 @@ public class FastFrateTest {
                 addBillPage.enterCubicFeet(cuft);
                 addBillPage.enterWeight(weight);
                 addBillPage.calculateAndConfirm();
-
+                addBillPage.clickPublished();
+                addBillPage.testToastMessageAfterPublish();
+                
                 // Capture screenshot after test execution
                 captureScreenshot(billNumber, "screenshot");
 
@@ -151,7 +153,7 @@ public class FastFrateTest {
 		test.addScreenCaptureFromPath(screenshotFilePath);
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod()
     public void tearDownExtentReports() {
         if (extent != null) {
             extent.flush();
