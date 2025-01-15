@@ -26,9 +26,10 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 
-    public void login(String email, String password) {
+    public void login(String email, String password) throws InterruptedException {
         enterEmail(email);
         enterPassword(password);
+        Thread.sleep(2000);
         clickLoginButton();
     }
 }

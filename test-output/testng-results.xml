@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-06T12:17:26 IST" name="Default suite" finished-at="2025-01-06T12:21:17 IST" duration-ms="230718">
+  <suite started-at="2025-01-15T10:49:21 IST" name="Default suite" finished-at="2025-01-15T10:52:20 IST" duration-ms="178960">
     <groups>
     </groups>
-    <test started-at="2025-01-06T12:17:26 IST" name="Default test" finished-at="2025-01-06T12:21:17 IST" duration-ms="230718">
-      <class name="testCases.FastFrateTest">
-        <test-method is-config="true" signature="setupExtentReports()[pri:0, instance:testCases.FastFrateTest@1ffaf86]" started-at="2025-01-06T12:17:26 IST" name="setupExtentReports" finished-at="2025-01-06T12:17:26 IST" duration-ms="329" status="PASS">
+    <test started-at="2025-01-15T10:49:21 IST" name="Default test" finished-at="2025-01-15T10:52:20 IST" duration-ms="178960">
+      <class name="pages.TermChangePopUp">
+        <test-method is-config="true" signature="setupExtentReports()[pri:0, instance:pages.TermChangePopUp@1ffaf86]" started-at="2025-01-15T10:49:21 IST" name="setupExtentReports" finished-at="2025-01-15T10:49:22 IST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtentReports -->
-        <test-method signature="executeBillingTests()[pri:0, instance:testCases.FastFrateTest@1ffaf86]" started-at="2025-01-06T12:17:26 IST" name="executeBillingTests" finished-at="2025-01-06T12:21:16 IST" duration-ms="230018" status="FAIL">
+        <test-method signature="executeBillingTests()[pri:0, instance:pages.TermChangePopUp@1ffaf86]" started-at="2025-01-15T10:49:22 IST" name="executeBillingTests" finished-at="2025-01-15T10:52:19 IST" duration-ms="177803" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
               <![CDATA[no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=131.0.6778.205)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'ANPL393', ip: '10.212.134.12', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+System info: host: 'ANPL393', ip: '10.212.134.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2841c450cfbeb634e3d79593e3a8102f, executeScript {script=return window.devicePixelRatio;, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\MDNAFI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50391}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50391/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2841c450cfbeb634e3d79593e3a8102f]]>
+Command: [d860d86cc76ed5a1606147b3eb510ba3, executeScript {script=return window.devicePixelRatio;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\MDNAFI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56094/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d860d86cc76ed5a1606147b3eb510ba3]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=131.0.6778.205)
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'ANPL393', ip: '10.212.134.12', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+System info: host: 'ANPL393', ip: '10.212.134.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2841c450cfbeb634e3d79593e3a8102f, executeScript {script=return window.devicePixelRatio;, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\MDNAFI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50391}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50391/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2841c450cfbeb634e3d79593e3a8102f
+Command: [d860d86cc76ed5a1606147b3eb510ba3, executeScript {script=return window.devicePixelRatio;, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\MDNAFI~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56094/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d860d86cc76ed5a1606147b3eb510ba3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -51,8 +51,8 @@ at com.assertthat.selenium_shutterbug.utils.web.Browser.executeJsScript(Browser.
 at com.assertthat.selenium_shutterbug.utils.web.Browser.<init>(Browser.java:81)
 at com.assertthat.selenium_shutterbug.core.Shutterbug.shootPage(Shutterbug.java:139)
 at com.assertthat.selenium_shutterbug.core.Shutterbug.shootPage(Shutterbug.java:123)
-at testCases.FastFrateTest.captureScreenshot(FastFrateTest.java:150)
-at testCases.FastFrateTest.executeBillingTests(FastFrateTest.java:121)
+at pages.TermChangePopUp.captureScreenshot(TermChangePopUp.java:146)
+at pages.TermChangePopUp.executeBillingTests(TermChangePopUp.java:117)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,11 +87,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- executeBillingTests -->
-        <test-method is-config="true" signature="tearDownExtentReports()[pri:0, instance:testCases.FastFrateTest@1ffaf86]" started-at="2025-01-06T12:21:16 IST" name="tearDownExtentReports" finished-at="2025-01-06T12:21:17 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="tearDownExtentReports()[pri:0, instance:pages.TermChangePopUp@1ffaf86]" started-at="2025-01-15T10:52:19 IST" name="tearDownExtentReports" finished-at="2025-01-15T10:52:20 IST" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownExtentReports -->
-      </class> <!-- testCases.FastFrateTest -->
+      </class> <!-- pages.TermChangePopUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

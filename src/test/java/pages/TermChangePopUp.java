@@ -32,7 +32,7 @@ public class TermChangePopUp {
     private static final String USERNAME = "Jitendra.kumar@atomicnorth.com";
     private static final String PASSWORD = "Jeetay@123";
     private static final String SCREENSHOT_PATH = "C:\\Users\\MdNafisAhmad\\git\\data\\DataDrivenFramework\\target\\1";
-    private static final String EXCEL_PATH = "C:\\Users\\MdNafisAhmad\\Desktop\\DataDrivenFramework\\src\\test\\java\\utils\\AutomationTest.xlsx";
+    private static final String EXCEL_PATH = "C:\\Users\\MdNafisAhmad\\git\\repository8\\DataDrivenFramework\\src\\test\\java\\utils\\AutomationTest2.xlsx";
     private static final String SHEET_NAME = "Sheet1"; // Update to your actual sheet name
 
     private ExtentReports extent;
@@ -45,13 +45,13 @@ public class TermChangePopUp {
         String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + timeStamp + ".html";
 
         // Configure the ExtentReports HTML reporter
-        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
-        sparkReporter.config().setDocumentTitle("Automation Test Report");
-        sparkReporter.config().setReportName("Billing Test Execution");
-        sparkReporter.config().setTheme(Theme.STANDARD);
+        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(reportPath);
+        htmlReporter.config().setDocumentTitle("Automation Test Report");
+        htmlReporter.config().setReportName("Billing Test Execution");
+        htmlReporter.config().setTheme(Theme.STANDARD);
 
-        ExtentReports extent = new ExtentReports();
-        extent.attachReporter(sparkReporter);
+        extent = new ExtentReports();
+        extent.attachReporter(htmlReporter);
 
         // Add system information to the report
         extent.setSystemInfo("Host Name", "Localhost");
